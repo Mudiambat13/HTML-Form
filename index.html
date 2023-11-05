@@ -1,0 +1,76 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/style.css">
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <title>Formulaire </title>
+</head>
+<body>
+  <div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <div class="card">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs" id="form-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="signup-tab" data-toggle="tab" href="#signup" role="tab" aria-controls="signup" aria-selected="true">Inscription</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="login-tab" data-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="false">Connexion</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <div class="tab-content" id="form-tabs-content">
+            <div class="tab-pane fade show active" id="signup" role="tabpanel" aria-labelledby="signup-tab">
+              <form id="signup-form" method="post" action="#" role="form">
+                <div class="form-group">
+                  <label for="signup-name">Nom complet</label>
+                  <input type="text" class="form-control" id="signup-name" name="name" placeholder="Entrez votre nom complet" required>
+                </div>
+                <div class="form-group">
+                  <label for="signup-email">Email</label>
+                  <input type="email" class="form-control" id="signup-email" name="email" placeholder="Entrez votre email" required>
+                </div>
+                <div class="form-group">
+                  <label for="signup-password">Mot de passe</label>
+                  <input type="password" class="form-control" id="signup-password" name="password" placeholder="Entrez votre mot de passe" required>
+                </div>
+                <div class="form-group">
+                  <label for="signup-confirm">Confirmez le mot de passe</label>
+                  <input type="password" class="form-control" id="signup-confirm" name="confirm" placeholder="Confirmez votre mot de passe" required>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary btn-block">S'inscrire</button>
+                </div>
+              </form>
+            </div>
+            <div class="tab-pane fade" id="login" role="tabpanel" aria-labelledby="login-tab">
+              <form id="login-form" method="post" action="#" role="form">
+                <div class="form-group">
+                  <label for="login-email">Email</label>
+                  <input type="email" class="form-control" id="login-email" name="email" placeholder="Entrez votre email" required>
+                </div>
+                <div class="form-group">
+                  <label for="login-password">Mot de passe</label>
+                  <input type="password" class="form-control" id="login-password" name="password" placeholder="Entrez votre mot de passe" required>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary btn-block">Se connecter</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
